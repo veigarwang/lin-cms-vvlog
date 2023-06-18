@@ -124,7 +124,7 @@ export default {
           this.loading = false
         })
       this.listData = res.items
-      this.pagination.count = res.count
+      this.pagination.total = res.total
     },
   },
 }

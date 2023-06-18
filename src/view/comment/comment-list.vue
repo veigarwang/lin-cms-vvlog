@@ -185,7 +185,7 @@ export default {
         if (currentPage == 0) {
           this.comments = res.items
           this.pagination.currentPage += 1
-          this.pagination.pageTotal = res.count
+          this.pagination.pageTotal = res.total
         }
       } else {
         if (currentPage == 0) {
@@ -195,11 +195,11 @@ export default {
         }
 
         this.pagination.currentPage += 1
-        this.pagination.pageTotal = res.count
+        this.pagination.pageTotal = res.total
 
         $state && $state.loaded()
       }
-      this.$emit('success', res.count)
+      this.$emit('success', res.total)
     },
     async getTopComments(root_comment_id, index) {
       let res = await commentApi.getPublicComments({
@@ -211,7 +211,7 @@ export default {
       })
       this.comments[index].top_comment = res.items
       this.comments[index].replyVisible = false
-      this.$emit('success', res.count)
+      this.$emit('success', res.total)
     },
     handleClickAvatar() { },
     handleClickAuthor() { },

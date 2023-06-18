@@ -17,7 +17,7 @@
     "axios": "^0.24.0",
     "core-js": "^3.23.5",
     "dayjs": "^1.11.6",
-    "element-plus": "^2.3.6",
+    "element-plus": "^2.2.30",
     "event-source-polyfill": "^1.0.31",
     "fastscan": "^1.0.4",
     "good-storage": "^1.1.0",
@@ -28,7 +28,7 @@
     "screenfull": "^4.2.0",
     "swiper": "^6.4.5",
     "v3-infinite-loading": "^1.2.1",
-    "vditor": "^3.9.3",
+    "vditor": "^3.9.0",
     "vue": "^3.2.47",
     "vue-picture-cropper": "^0.1.9",
     "vue-router": "^4.1.6",
@@ -84,7 +84,7 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "gitHooks": {},
+  "gitHooks": { },
   "lint-staged": {
     "*.{js,vue}": [
       "prettier --write",
