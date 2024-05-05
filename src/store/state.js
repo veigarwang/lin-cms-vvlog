@@ -1,5 +1,4 @@
 import appConfig from '@/config/index' // 引入项目配置
-import stageConfig from '@/config/stage' // 引入舞台配置
 
 export default {
   user: {}, // 当前用户
@@ -10,9 +9,6 @@ export default {
   unreadMessages: [],
   alreadyReadMessages: [],
 
-  // 舞台配置
-  stageConfig,
-
   // 当前页信息
   currentRoute: {
     config: null,
@@ -20,5 +16,5 @@ export default {
   },
 
   sidebarLevel: appConfig.sidebarLevel || 3,
-  defaultRoute: appConfig.defaultRoute || '/about',
+  defaultRoute: appConfig.defaultRoute || '/login',
 }
